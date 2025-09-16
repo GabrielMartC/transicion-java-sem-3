@@ -1,5 +1,7 @@
 package com.example.gdmc.transicion.personas;
 
+import com.example.gdmc.transicion.planetas.Planeta;
+
 public class Atleta extends Persona{
     private Integer masaMuscular;
     private Integer cantTecnicasConocidas;
@@ -42,6 +44,12 @@ public class Atleta extends Persona{
 
     public void aprenderTecnica(){
         cantTecnicasConocidas += 1;
+    }
+
+    @Override
+    public void darTributoAPlaneta(Planeta planeta) {
+        planeta.construirMuralla();
+        planeta.construirMuralla();
     }
 
 }

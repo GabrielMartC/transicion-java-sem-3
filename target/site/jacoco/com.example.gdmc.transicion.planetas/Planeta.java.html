@@ -9,37 +9,64 @@ import com.example.gdmc.transicion.personas.Persona;
 public class Planeta {
     private Set&lt;Persona&gt; habitantes;
     private Integer cantMuseos;
+    private Integer longitudMuralla;
 
-<span class="fc" id="L13">    public Planeta(){</span>
-<span class="fc" id="L14">        habitantes = new HashSet&lt;Persona&gt;();</span>
-<span class="fc" id="L15">        cantMuseos = 0;</span>
-<span class="fc" id="L16">    }</span>
+<span class="fc" id="L14">    public Planeta(){</span>
+<span class="fc" id="L15">        habitantes = new HashSet&lt;Persona&gt;();</span>
+<span class="fc" id="L16">        cantMuseos = 0;</span>
+<span class="fc" id="L17">        longitudMuralla = 0;</span>
+<span class="fc" id="L18">    }</span>
 
     public void agregarHab(Persona p){
-<span class="fc" id="L19">        habitantes.add(p);</span>
-<span class="fc" id="L20">    }</span>
+<span class="fc" id="L21">        habitantes.add(p);</span>
+<span class="fc" id="L22">    }</span>
 
     public List&lt;Persona&gt; delegacionDiplomatica(){
-<span class="fc" id="L23">        return habitantes.stream().filter(pers -&gt; pers.esDestacado()).toList();</span>
+<span class="fc" id="L25">        return habitantes.stream().filter(pers -&gt; pers.esDestacado()).toList();</span>
     }
 
     public Integer valorDefensa(){
-<span class="fc bfc" id="L27" title="All 2 branches covered.">        return (int)(habitantes.stream().filter(pers -&gt; pers.potencia() &gt;= 30).count());</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        return (int)(habitantes.stream().filter(pers -&gt; pers.potencia() &gt;= 30).count());</span>
     }
 
     public Boolean esCulto(){
-<span class="pc bpc" id="L31" title="5 of 6 branches missed.">        return cantMuseos &gt;= 2 &amp;&amp; habitantes.stream().allMatch(pers -&gt; pers.inteligencia() &gt;= 10);</span>
+<span class="pc bpc" id="L33" title="5 of 6 branches missed.">        return cantMuseos &gt;= 2 &amp;&amp; habitantes.stream().allMatch(pers -&gt; pers.inteligencia() &gt;= 10);</span>
     }
 
     public Integer potenciaReal(){
-<span class="fc" id="L35">        return habitantes.stream().mapToInt(Persona::potencia).sum();</span>
+<span class="fc" id="L37">        return habitantes.stream().mapToInt(Persona::potencia).sum();</span>
+    }
 
-        // Integer total = 0;
-        // for(Persona p : habitantes){
-        //     total += p.potencia();
-        // }
+    public void construirMuralla(){
+<span class="fc" id="L41">        longitudMuralla += 1;</span>
+<span class="fc" id="L42">    }</span>
 
-        // return total;
+    public void fundarMuseo(){
+<span class="fc" id="L45">        cantMuseos += 1;</span>
+<span class="fc" id="L46">    }</span>
+
+    public Integer potenciaAparente(){
+<span class="fc" id="L49">        return potenciaHabitanteConMayorPotencia() * habitantes.size();</span>
+    }
+
+    private Integer potenciaHabitanteConMayorPotencia(){
+<span class="fc" id="L53">        return habitantes.stream().mapToInt(Persona::potencia).max().orElse(0);</span>
+    }
+
+    public Boolean necesitaReforzarse(){
+<span class="pc bpc" id="L57" title="1 of 2 branches missed.">        return potenciaAparente() &gt;= potenciaReal() * 2;</span>
+    }
+
+    public void recibirTributo(){
+<span class="fc" id="L61">        habitantes.forEach(hab -&gt; hab.darTributoAPlaneta(this));</span>
+<span class="fc" id="L62">    }</span>
+
+    public Integer getCantMuseos() {
+<span class="fc" id="L65">        return cantMuseos;</span>
+    }
+
+    public Integer getLongitudMuralla() {
+<span class="fc" id="L69">        return longitudMuralla;</span>
     }
 
 

@@ -56,5 +56,25 @@ public class PlanetaTest {
         assertEquals(184, triton.potenciaReal());
     }
 
+    @Test 
+    void potenciaAparenteDeTritonEs312(){
+        assertEquals(312, triton.potenciaAparente());
+    }
 
+    @Test 
+    void tritonNesecitaReforzarse(){
+        assertFalse(triton.necesitaReforzarse());
+    }
+
+    @Test
+    void tritonDespuesDeRecibirTributosLogitudDeMurallasEs6(){
+        triton.recibirTributo();
+        assertEquals(6, triton.getLongitudMuralla());
+    }
+
+    @Test
+    void tritonDespuesDeRecibirTributosTiene2Museos(){
+        triton.recibirTributo();
+        assertEquals(2, triton.getCantMuseos());
+    }
 }

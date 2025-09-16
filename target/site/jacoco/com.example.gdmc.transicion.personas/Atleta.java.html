@@ -1,48 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Atleta.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">transicion-java</a> &gt; <a href="index.source.html" class="el_package">com.example.gdmc.transicion.personas</a> &gt; <span class="el_source">Atleta.java</span></div><h1>Atleta.java</h1><pre class="source lang-java linenums">package com.example.gdmc.transicion.personas;
 
+import com.example.gdmc.transicion.planetas.Planeta;
+
 public class Atleta extends Persona{
     private Integer masaMuscular;
     private Integer cantTecnicasConocidas;
     
 
     public Atleta(Integer edad) {
-<span class="fc" id="L9">        super(edad);</span>
-<span class="fc" id="L10">        masaMuscular = 4;</span>
-<span class="fc" id="L11">        cantTecnicasConocidas = 2;</span>
-<span class="fc" id="L12">    }</span>
+<span class="fc" id="L11">        super(edad);</span>
+<span class="fc" id="L12">        masaMuscular = 4;</span>
+<span class="fc" id="L13">        cantTecnicasConocidas = 2;</span>
+<span class="fc" id="L14">    }</span>
 
 
     public Atleta(Integer edad, Integer cantTecnicasConocidas) {
-<span class="fc" id="L16">        super(edad);</span>
-<span class="fc" id="L17">        this.cantTecnicasConocidas = cantTecnicasConocidas;</span>
-<span class="fc" id="L18">        masaMuscular = 4;</span>
-<span class="fc" id="L19">    }</span>
+<span class="fc" id="L18">        super(edad);</span>
+<span class="fc" id="L19">        this.cantTecnicasConocidas = cantTecnicasConocidas;</span>
+<span class="fc" id="L20">        masaMuscular = 4;</span>
+<span class="fc" id="L21">    }</span>
 
 
     public Atleta(Integer edad, Integer masaMuscular, Integer cantTecnicasConocidas) {
-<span class="fc" id="L23">        super(edad);</span>
-<span class="fc" id="L24">        this.masaMuscular = masaMuscular;</span>
-<span class="fc" id="L25">        this.cantTecnicasConocidas = cantTecnicasConocidas;</span>
-<span class="fc" id="L26">    }</span>
+<span class="fc" id="L25">        super(edad);</span>
+<span class="fc" id="L26">        this.masaMuscular = masaMuscular;</span>
+<span class="fc" id="L27">        this.cantTecnicasConocidas = cantTecnicasConocidas;</span>
+<span class="fc" id="L28">    }</span>
 
 
     @Override
     public Integer potencia(){
-<span class="fc" id="L31">        return super.potencia() + (masaMuscular * cantTecnicasConocidas);</span>
+<span class="fc" id="L33">        return super.potencia() + (masaMuscular * cantTecnicasConocidas);</span>
     }
 
     @Override
     public Boolean esDestacado(){
-<span class="fc bfc" id="L36" title="All 4 branches covered.">        return super.esDestacado() || cantTecnicasConocidas &gt; 5;</span>
+<span class="fc bfc" id="L38" title="All 4 branches covered.">        return super.esDestacado() || cantTecnicasConocidas &gt; 5;</span>
     }
 
     public void entrenar_Dias(Integer dias){
-<span class="fc" id="L40">        masaMuscular += dias / 5;</span>
-<span class="fc" id="L41">    }</span>
+<span class="fc" id="L42">        masaMuscular += dias / 5;</span>
+<span class="fc" id="L43">    }</span>
 
     public void aprenderTecnica(){
-<span class="fc" id="L44">        cantTecnicasConocidas += 1;</span>
-<span class="fc" id="L45">    }</span>
+<span class="fc" id="L46">        cantTecnicasConocidas += 1;</span>
+<span class="fc" id="L47">    }</span>
+
+    @Override
+    public void darTributoAPlaneta(Planeta planeta) {
+<span class="fc" id="L51">        planeta.construirMuralla();</span>
+<span class="fc" id="L52">        planeta.construirMuralla();</span>
+<span class="fc" id="L53">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Persona.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">transicion-java</a> &gt; <a href="index.source.html" class="el_package">com.example.gdmc.transicion.personas</a> &gt; <span class="el_source">Persona.java</span></div><h1>Persona.java</h1><pre class="source lang-java linenums">package com.example.gdmc.transicion.personas;
 
+import com.example.gdmc.transicion.planetas.Planeta;
+
 public class Persona {
     private Integer edad;
 
-<span class="fc" id="L6">    public Persona(Integer edad) {</span>
-<span class="fc" id="L7">        this.edad = edad;</span>
-<span class="fc" id="L8">    }    </span>
+<span class="fc" id="L8">    public Persona(Integer edad) {</span>
+<span class="fc" id="L9">        this.edad = edad;</span>
+<span class="fc" id="L10">    }    </span>
 
     public Integer inteligencia(){
-<span class="pc bpc" id="L11" title="1 of 4 branches missed.">        Integer valorIntelig = (edad &gt;= 20 &amp;&amp; edad &lt;= 40) ? 12 : 8;</span>
+<span class="pc bpc" id="L13" title="1 of 4 branches missed.">        Integer valorIntelig = (edad &gt;= 20 &amp;&amp; edad &lt;= 40) ? 12 : 8;</span>
 
-<span class="fc" id="L13">        return valorIntelig;</span>
+<span class="fc" id="L15">        return valorIntelig;</span>
     }
 
     public Integer potencia(){
-<span class="fc" id="L17">        return 20;</span>
+<span class="fc" id="L19">        return 20;</span>
     }
 
     public Boolean esDestacado(){
-<span class="pc bpc" id="L21" title="1 of 4 branches missed.">        return edad.equals(25) || edad.equals(35);</span>
+<span class="pc bpc" id="L23" title="1 of 4 branches missed.">        return edad.equals(25) || edad.equals(35);</span>
 
     }
+
+<span class="fc" id="L27">    public void darTributoAPlaneta(Planeta planeta) {}</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

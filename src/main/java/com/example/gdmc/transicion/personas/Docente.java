@@ -1,5 +1,7 @@
 package com.example.gdmc.transicion.personas;
 
+import com.example.gdmc.transicion.planetas.Planeta;
+
 public class Docente extends Persona {
     private Integer cantCursosQueDio;
 
@@ -28,5 +30,11 @@ public class Docente extends Persona {
 
         return cantCursosQueDio > 3;
     }
+
+    @Override
+    public void darTributoAPlaneta(Planeta planeta) {
+        planeta.fundarMuseo();
+    }
+
 
 }

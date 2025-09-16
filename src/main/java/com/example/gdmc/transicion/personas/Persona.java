@@ -1,5 +1,7 @@
 package com.example.gdmc.transicion.personas;
 
+import com.example.gdmc.transicion.planetas.Planeta;
+
 public class Persona {
     private Integer edad;
 
@@ -21,5 +23,7 @@ public class Persona {
         return edad.equals(25) || edad.equals(35);
 
     }
+
+    public void darTributoAPlaneta(Planeta planeta) {}
 
 }

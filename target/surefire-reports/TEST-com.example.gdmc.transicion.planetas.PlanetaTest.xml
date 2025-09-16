@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.063" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.135" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="MX"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\donat\AppData\Local\Temp\surefire3132753209812124599\surefirebooter-20250916191831986_3.jar C:\Users\donat\AppData\Local\Temp\surefire3132753209812124599 2025-09-16T19-18-31_470-jvmRun1 surefire-20250916191831986_1tmp surefire_0-20250916191831986_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\donat\AppData\Local\Temp\surefire12725257053616453907\surefirebooter-20250916201722517_3.jar C:\Users\donat\AppData\Local\Temp\surefire12725257053616453907 2025-09-16T20-17-22_197-jvmRun1 surefire-20250916201722517_1tmp surefire_0-20250916201722517_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="c:\Users\donat\OneDrive\Escritorio\Obj2_actividades\sem3\transicion-java-sem-3\transicion-java\target\test-classes;c:\Users\donat\OneDrive\Escritorio\Obj2_actividades\sem3\transicion-java-sem-3\transicion-java\target\classes;C:\Users\donat\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.0\junit-jupiter-5.12.0.jar;C:\Users\donat\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.0\junit-jupiter-api-5.12.0.jar;C:\Users\donat\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\donat\.m2\repository\org\junit\platform\junit-platform-commons\1.12.0\junit-platform-commons-1.12.0.jar;C:\Users\donat\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\donat\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.0\junit-jupiter-params-5.12.0.jar;C:\Users\donat\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.0\junit-jupiter-engine-5.12.0.jar;C:\Users\donat\.m2\repository\org\junit\platform\junit-platform-engine\1.12.0\junit-platform-engine-1.12.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\donat\AppData\Local\Temp\surefire3132753209812124599\surefirebooter-20250916191831986_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\donat\AppData\Local\Temp\surefire12725257053616453907\surefirebooter-20250916201722517_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
@@ -58,8 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="tritonNoEsUnPlanetaCulto" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.006"/>
-  <testcase name="delegacionDiplomaticaDeTritonEsAnaRosaMonica" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.02"/>
-  <testcase name="valorInicialDefensaDeTritonEs2" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.01"/>
-  <testcase name="potenciaRealDeTritonEs184" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.01"/>
+  <testcase name="tritonNoEsUnPlanetaCulto" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.011"/>
+  <testcase name="delegacionDiplomaticaDeTritonEsAnaRosaMonica" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.006"/>
+  <testcase name="tritonDespuesDeRecibirTributosLogitudDeMurallasEs6" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.004"/>
+  <testcase name="potenciaAparenteDeTritonEs312" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.017"/>
+  <testcase name="valorInicialDefensaDeTritonEs2" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.039"/>
+  <testcase name="tritonNesecitaReforzarse" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.018"/>
+  <testcase name="potenciaRealDeTritonEs184" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.004"/>
+  <testcase name="tritonDespuesDeRecibirTributosTiene2Museos" classname="com.example.gdmc.transicion.planetas.PlanetaTest" time="0.003"/>
 </testsuite>
