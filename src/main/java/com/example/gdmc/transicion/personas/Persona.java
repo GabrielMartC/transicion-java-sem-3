@@ -26,4 +26,8 @@ public class Persona {
 
     public void darTributoAPlaneta(Planeta planeta) {}
 
+    public Integer valor(){
+        return Integer.sum(potencia(), inteligencia());
+    }
+
 }

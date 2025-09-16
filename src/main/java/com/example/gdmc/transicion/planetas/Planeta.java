@@ -69,6 +69,10 @@ public class Planeta {
         return longitudMuralla;
     }
 
+    public List<Persona> habitantesValiosos(){
+        return habitantes.stream().filter(hab -> hab.valor() >= 40).toList();
+    }
+
 
 
 }

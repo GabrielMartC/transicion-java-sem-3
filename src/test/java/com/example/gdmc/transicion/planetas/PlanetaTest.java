@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -36,10 +37,18 @@ public class PlanetaTest {
 
     }
 
+    // @Test
+    // void delegacionDiplomaticaDeTritonEsAnaRosaMonica(){
+    //     assertTrue(triton.delegacionDiplomatica().containsAll(List.of(ana,rosa,monica)));
+    // }
+
     @Test
     void delegacionDiplomaticaDeTritonEsAnaRosaMonica(){
-        assertTrue(triton.delegacionDiplomatica().containsAll(List.of(ana,rosa,monica)));
+        assertEquals(new HashSet<>(List.of(ana, rosa, monica)),
+            new HashSet<>(triton.delegacionDiplomatica()));
     }
+
+    
 
     @Test 
     void valorInicialDefensaDeTritonEs2(){
@@ -77,4 +86,11 @@ public class PlanetaTest {
         triton.recibirTributo();
         assertEquals(2, triton.getCantMuseos());
     }
+
+    @Test
+    void habitantesValiososDeTritonSonAnaRosaPerlaMonica(){
+        assertEquals(new HashSet<>(List.of(ana, rosa, perla, monica)),
+            new HashSet<>(triton.habitantesValiosos()));
+    }
+
 }

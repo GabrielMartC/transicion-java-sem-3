@@ -32,6 +32,11 @@ public class PersonaTest {
         assertFalse(julieta.esDestacado());
     }
 
+    @Test 
+    void JulietaPersonaConValor28() {
+        assertEquals(28,julieta.valor());
+    }
+
     // //ANA
     @Test
     void AnaAtletaTienePotencia28() {
@@ -85,6 +90,11 @@ public class PersonaTest {
         assertFalse(perla.esDestacado());
     }
 
+    @Test 
+    void PerlaAtletaConValor56() {
+        assertEquals(56,perla.valor());
+    }
+
     // //MONICA
     @Test
     void MonicaDocenteTienePotencia20() {
@@ -118,6 +128,14 @@ public class PersonaTest {
         assertFalse(luisa.esDestacado());
     }
 
+    @Test 
+    void luisaDocenteConValor39() {
+        assertEquals(39,luisa.valor());
+    }    
+
+
+    //OTROS TEST
+
     @Test
     void perlaDespuesDeEntrenar15YAprender1TecnTienePotencia65() {
         perla.entrenar_Dias(15);    
@@ -142,4 +160,6 @@ public class PersonaTest {
         assertTrue(perla.esDestacado());
 
     }
+
+
 }

@@ -36,5 +36,11 @@ public class Docente extends Persona {
         planeta.fundarMuseo();
     }
 
+    @Override
+    public Integer valor(){
+        return super.valor() + 5;
+    }
+
+
 
 }
