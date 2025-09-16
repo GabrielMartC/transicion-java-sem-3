@@ -11,6 +11,21 @@ public class Atleta extends Persona{
         cantTecnicasConocidas = 2;
     }
 
+
+    public Atleta(Integer edad, Integer cantTecnicasConocidas) {
+        super(edad);
+        this.cantTecnicasConocidas = cantTecnicasConocidas;
+        masaMuscular = 4;
+    }
+
+
+    public Atleta(Integer edad, Integer masaMuscular, Integer cantTecnicasConocidas) {
+        super(edad);
+        this.masaMuscular = masaMuscular;
+        this.cantTecnicasConocidas = cantTecnicasConocidas;
+    }
+
+
     @Override
     public Integer potencia(){
         return super.potencia() + (masaMuscular * cantTecnicasConocidas);

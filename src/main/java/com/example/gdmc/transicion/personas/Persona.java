@@ -1,19 +1,15 @@
 package com.example.gdmc.transicion.personas;
 
-public abstract class Persona {
+public class Persona {
     private Integer edad;
-    
 
     public Persona(Integer edad) {
         this.edad = edad;
     }    
 
-
     public Integer inteligencia(){
-        Integer valorIntelig = 8;
-        if(edad >= 20 && edad <= 40){
-            valorIntelig = 12;
-        }
+        Integer valorIntelig = (edad >= 20 && edad <= 40) ? 12 : 8;
+
         return valorIntelig;
     }
 
@@ -22,6 +18,8 @@ public abstract class Persona {
     }
 
     public Boolean esDestacado(){
-        return edad == 25 || edad == 35;
+        return edad.equals(25) || edad.equals(35);
+
     }
+
 }

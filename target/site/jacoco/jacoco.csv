@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+transicion-java,com.example.gdmc.transicion.planetas,Planeta,17,63,5,3,0,10,4,9,1,8
+transicion-java,com.example.gdmc.transicion.personas,Persona,0,43,2,6,0,7,2,6,0,4
+transicion-java,com.example.gdmc.transicion.personas,Atleta,0,81,0,4,0,18,0,9,0,7
+transicion-java,com.example.gdmc.transicion.personas,Docente,8,28,0,2,3,5,1,4,1,3
+transicion-java,com.example.gdmc.transicion.personas,Soldado,3,0,0,0,1,0,1,0,1,0

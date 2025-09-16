@@ -6,20 +6,6 @@ import java.util.Set;
 
 import com.example.gdmc.transicion.personas.Persona;
 
-/*
-De cada planeta se conocen los habitantes, que son personas. También la cantidad de museos que hay en el planeta.
-Se tiene que poder obtener, para cada planeta
-
-la delegación diplomática, que está formada por los habitantes destacados.
-
-el valor inicial de defensa, que es la cantidad de habitantes que tienen, al menos, 30 unidades de potencia.
-
-si es culto: la condición es que haya al menos dos museos, y que todos los habitantes tengan al menos 10 
-unidades de inteligencia.
-
-la potencia real: es la suma de la potencia de todos los habitantes.
- */
-
 public class Planeta {
     private Set<Persona> habitantes;
     private Integer cantMuseos;
@@ -47,7 +33,15 @@ public class Planeta {
 
     public Integer potenciaReal(){
         return habitantes.stream().mapToInt(Persona::potencia).sum();
+
+        // Integer total = 0;
+        // for(Persona p : habitantes){
+        //     total += p.potencia();
+        // }
+
+        // return total;
     }
+
 
 
 }
