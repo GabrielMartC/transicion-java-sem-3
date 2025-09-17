@@ -73,6 +73,10 @@ public class Planeta {
         return habitantes.stream().filter(hab -> hab.valor() >= 40).toList();
     }
 
+    public void apaciguarPlaneta_(Planeta unPlaneta){
+        this.habitantesValiosos().forEach(hab -> hab.darTributoAPlaneta(unPlaneta));
+    }
+
 
 
 }

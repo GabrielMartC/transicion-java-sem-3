@@ -25,6 +25,7 @@ public class PlanetaTest {
     Persona luisa = new Docente(35, 1);
 
     Planeta triton = new Planeta();
+    Planeta paleas = new Planeta();
 
     @BeforeEach
     public void init(){
@@ -91,6 +92,20 @@ public class PlanetaTest {
     void habitantesValiososDeTritonSonAnaRosaPerlaMonica(){
         assertEquals(new HashSet<>(List.of(ana, rosa, perla, monica)),
             new HashSet<>(triton.habitantesValiosos()));
+    }
+
+    //ana, rosa, perla, monica
+
+    @Test
+    void TritonApaciguaAPaleasQuedandoCon6KmDeMurallaConstruida(){
+        triton.apaciguarPlaneta_(paleas);
+        assertEquals(6, paleas.getLongitudMuralla());
+    }
+
+    @Test
+    void TritonApaciguaAPaleasQuedandoCon1MuseoConstruido(){
+        triton.apaciguarPlaneta_(paleas);
+        assertEquals(1, paleas.getCantMuseos());
     }
 
 }
