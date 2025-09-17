@@ -30,4 +30,10 @@ public class Persona {
         return Integer.sum(potencia(), inteligencia());
     }
 
+    public Integer getEdad() {
+        return edad;
+    }
+
+    
+
 }

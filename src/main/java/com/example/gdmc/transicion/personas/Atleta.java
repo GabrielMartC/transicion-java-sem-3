@@ -48,8 +48,9 @@ public class Atleta extends Persona{
 
     @Override
     public void darTributoAPlaneta(Planeta planeta) {
-        planeta.construirMuralla();
-        planeta.construirMuralla();
+        // planeta.construirMuralla();
+        // planeta.construirMuralla();
+        planeta.construir_KmDeMuralla(2);
     }
 
 }

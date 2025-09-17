@@ -12,9 +12,12 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.example.gdmc.transicion.armas.Espadon;
+import com.example.gdmc.transicion.armas.Pistolete;
 import com.example.gdmc.transicion.personas.Atleta;
 import com.example.gdmc.transicion.personas.Docente;
 import com.example.gdmc.transicion.personas.Persona;
+import com.example.gdmc.transicion.personas.Soldado;
 
 public class PlanetaTest {
     Persona julieta = new Persona(42);
@@ -23,6 +26,11 @@ public class PlanetaTest {
     Persona perla = new Atleta(28, 6, 4);
     Persona monica = new Docente(45, 6);
     Persona luisa = new Docente(35, 1);
+
+    Soldado lucas = new Soldado(24);
+    Soldado juan = new Soldado(50);
+    Espadon espadon = new Espadon(20);
+    Pistolete pistolete = new Pistolete(8);
 
     Planeta triton = new Planeta();
     Planeta paleas = new Planeta();
@@ -106,6 +114,13 @@ public class PlanetaTest {
     void TritonApaciguaAPaleasQuedandoCon1MuseoConstruido(){
         triton.apaciguarPlaneta_(paleas);
         assertEquals(1, paleas.getCantMuseos());
+    }
+
+    @Test
+    void soldadoJuanOfreceTributoAPlanetaPaleasQuedando5KmMurallaConstr(){
+        paleas.agregarHab(juan);
+        paleas.recibirTributo();
+        assertEquals(5, paleas.getLongitudMuralla());
     }
 
 }

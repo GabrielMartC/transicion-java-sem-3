@@ -37,8 +37,8 @@ public class Planeta {
 <span class="fc" id="L37">        return habitantes.stream().mapToInt(Persona::potencia).sum();</span>
     }
 
-    public void construirMuralla(){
-<span class="fc" id="L41">        longitudMuralla += 1;</span>
+    public void construir_KmDeMuralla(Integer km){
+<span class="fc" id="L41">        longitudMuralla += km;</span>
 <span class="fc" id="L42">    }</span>
 
     public void fundarMuseo(){
@@ -68,6 +68,14 @@ public class Planeta {
     public Integer getLongitudMuralla() {
 <span class="fc" id="L69">        return longitudMuralla;</span>
     }
+
+    public List&lt;Persona&gt; habitantesValiosos(){
+<span class="fc bfc" id="L73" title="All 2 branches covered.">        return habitantes.stream().filter(hab -&gt; hab.valor() &gt;= 40).toList();</span>
+    }
+
+    public void apaciguarPlaneta_(Planeta unPlaneta){
+<span class="fc" id="L77">        this.habitantesValiosos().forEach(hab -&gt; hab.darTributoAPlaneta(unPlaneta));</span>
+<span class="fc" id="L78">    }</span>
 
 
 

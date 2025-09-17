@@ -1,6 +1,9 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-transicion-java,com.example.gdmc.transicion.planetas,Planeta,21,132,6,4,0,22,5,18,1,17
-transicion-java,com.example.gdmc.transicion.personas,Persona,0,45,2,6,0,8,2,7,0,5
-transicion-java,com.example.gdmc.transicion.personas,Atleta,0,87,0,4,0,21,0,10,0,8
-transicion-java,com.example.gdmc.transicion.personas,Docente,8,32,0,2,3,7,1,5,1,4
-transicion-java,com.example.gdmc.transicion.personas,Soldado,3,0,0,0,1,0,1,0,1,0
+transicion-java,com.example.gdmc.transicion.planetas,Planeta,19,159,6,6,0,25,5,23,1,21
+transicion-java,com.example.gdmc.transicion.personas,Persona,0,56,2,6,0,10,2,9,0,7
+transicion-java,com.example.gdmc.transicion.personas,Atleta,0,86,0,4,0,20,0,10,0,8
+transicion-java,com.example.gdmc.transicion.personas,Docente,8,38,0,2,3,8,1,6,1,5
+transicion-java,com.example.gdmc.transicion.personas,Soldado,0,42,0,0,0,8,0,5,0,5
+transicion-java,com.example.gdmc.transicion.armas,Pistolete,6,18,1,1,0,4,1,2,0,2
+transicion-java,com.example.gdmc.transicion.armas,Espadon,0,20,0,2,0,4,0,3,0,2
+transicion-java,com.example.gdmc.transicion.armas,Arma,0,3,0,0,0,1,0,1,0,1

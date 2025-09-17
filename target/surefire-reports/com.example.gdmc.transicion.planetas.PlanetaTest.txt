@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.gdmc.transicion.planetas.PlanetaTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s -- in com.example.gdmc.transicion.planetas.PlanetaTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.334 s -- in com.example.gdmc.transicion.planetas.PlanetaTest

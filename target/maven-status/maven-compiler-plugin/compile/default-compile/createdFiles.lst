@@ -1,5 +1,8 @@
+com\example\gdmc\transicion\personas\Soldado.class
+com\example\gdmc\transicion\personas\Docente.class
+com\example\gdmc\transicion\armas\Pistolete.class
+com\example\gdmc\transicion\armas\Arma.class
 com\example\gdmc\transicion\personas\Atleta.class
 com\example\gdmc\transicion\planetas\Planeta.class
-com\example\gdmc\transicion\personas\Soldado.class
+com\example\gdmc\transicion\armas\Espadon.class
 com\example\gdmc\transicion\personas\Persona.class
-com\example\gdmc\transicion\personas\Docente.class

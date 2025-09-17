@@ -4,7 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import com.example.gdmc.transicion.armas.Espadon;
+import com.example.gdmc.transicion.armas.Pistolete;
 
 
 public class PersonaTest {
@@ -15,6 +19,18 @@ public class PersonaTest {
     Persona monica = new Docente(45, 6);
     Persona luisa = new Docente(35, 1);
 
+    Soldado lucas = new Soldado(24);
+    Soldado juan = new Soldado(50);
+    Espadon espadon = new Espadon(20);
+    Pistolete pistolete = new Pistolete(8);
+    
+    @BeforeEach
+    public void init(){
+        lucas.agregarArma(espadon);
+        lucas.agregarArma(pistolete);
+
+        juan.agregarArma(espadon);
+    }
 
     // JULIETA
     @Test
@@ -160,6 +176,20 @@ public class PersonaTest {
         assertTrue(perla.esDestacado());
 
     }
+
+    //SOLDADOS
+
+    @Test
+    void lucasSoldadoPotencia58(){
+        assertEquals(58, lucas.potencia());
+    }
+
+    @Test
+    void juanSoldadoPotencia34(){
+        assertEquals(34, juan.potencia());
+    }
+
+
 
 
 }

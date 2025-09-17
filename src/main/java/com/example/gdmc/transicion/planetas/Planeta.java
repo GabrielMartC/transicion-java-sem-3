@@ -37,8 +37,8 @@ public class Planeta {
         return habitantes.stream().mapToInt(Persona::potencia).sum();
     }
 
-    public void construirMuralla(){
-        longitudMuralla += 1;
+    public void construir_KmDeMuralla(Integer km){
+        longitudMuralla += km;
     }
 
     public void fundarMuseo(){
